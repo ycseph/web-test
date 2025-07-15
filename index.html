@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1440" />
+    <title>Ant Bakery Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fontsource-variable/sf-pro-display@4.5.14/index.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  </head>
+  <body class="bg-[#f8f3e9] flex flex-col min-h-screen">
+    <!-- Header -->
+    <header
+      data-aos="fade-down"
+      class="bg-[#d49417] flex flex-col md:flex-row items-center justify-between px-4 md:px-16 h-auto md:h-[80px] font-[Inter,ui-sans-serif,sans-serif] py-2 md:py-0 relative"
+    >
+      <div class="flex items-center">
+        <a
+          href="index.html"
+          class="w-8 h-8 md:w-[50px] md:h-[50px] flex items-center justify-center ml-0 md:ml-16"
+        >
+          <img
+            src="assets/logo.png"
+            alt="Logo Ant Bakery"
+            class="w-full h-full object-contain rounded-full border-3 border-[#4e2e0e] bg-[#4e2e0e]"
+          />
+        </a>
+      </div>
+      <!-- Hamburger button -->
+      <button
+        id="nav-toggle"
+        class="md:hidden absolute right-6 top-6 z-20 p-2 rounded focus:outline-none focus:ring-2 focus:ring-white bg-[#411905]"
+      >
+        <svg
+          class="w-8 h-8 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </button>
+      <nav
+        id="main-nav"
+        class="flex-col md:flex md:flex-row gap-4 md:gap-12 md:mr-16 w-full md:w-auto items-center justify-center bg-[#d49417] md:bg-transparent absolute md:static left-0 top-[100%] md:top-auto z-10 md:z-auto transition-all duration-300 md:translate-y-0 -translate-y-full md:opacity-100 opacity-0 pointer-events-none md:pointer-events-auto"
+      >
+        <a
+          href="lokasi.html"
+          class="text-base md:text-[20px] font-bold text-white hover:text-[#4e2e0e] transition"
+          >Lokasi</a
+        >
+        <a
+          href="produk.html"
+          class="text-base md:text-[20px] font-bold text-white hover:text-[#4e2e0e] transition"
+          >Produk</a
+        >
+        <a
+          href="profil.html"
+          class="text-base md:text-[20px] font-bold text-white hover:text-[#4e2e0e] transition"
+          >Profil</a
+        >
+        <a
+          href="#kontak"
+          class="text-base md:text-[20px] font-bold text-white hover:text-[#4e2e0e] transition"
+          >Kontak</a
+        >
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-[400px] md:h-[865px] flex items-center px-4 md:px-16"
+      data-aos="fade-down"
+      style="
+        background: url('assets/hero image/home.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="z-10 max-w-1440 font-sfpro">
+        <h1
+          class="text-white text-xl md:text-2xl lg:text-4xl xl:text-[64px] font-bold leading-tight ml-0 md:ml-10 mb-3 md:mb-5 drop-shadow"
+        >
+          Hidup cuman sekali<br /><br />Isi dengan energi positif
+        </h1>
+        <p
+          class="text-white text-sm md:text-base lg:text-xl xl:text-[24px] drop-shadow ml-0 md:ml-10"
+        >
+          Memprioritaskan penggunaan bahan baku segar dan alami agar
+          menghasilkan roti<br />yang sehat.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="kontak"
+      data-aos="fade-up"
+      class="flex flex-col md:flex-row justify-between items-start px-4 md:px-16 pt-0 pb-8 md:pb-16 min-h-[600px] md:h-[880px] font-sfpro"
+      style="
+        background: url('assets/BACKGROUND.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      "
+    >
+      <div>
+        <div class="flex flex-col h-full">
+          <h2
+            class="text-xl md:text-3xl lg:text-5xl xl:text-[106px] font-extrabold mt-8 md:mt-32 mb-6 md:mb-16"
+          >
+            TALK TO US!
+          </h2>
+          <div class="flex flex-col gap-8 mb-10">
+            <div class="flex items-center gap-8 mb-8">
+              <img
+                src="assets/icon/whatsapp.png"
+                alt="WhatsApp"
+                class="w-[77px] h-[77px]"
+              />
+              <span class="text-base md:text-[24px]">0811-2332-123</span>
+            </div>
+            <div class="flex items-center gap-8">
+              <img
+                src="assets/icon/Group 42.png"
+                alt="Instagram"
+                class="w-[77px] h-[77px]"
+              />
+              <span class="text-base md:text-[24px]">@antbakery</span>
+            </div>
+          </div>
+          <a
+            href="lokasi.html"
+            class="bg-[#411905] text-white w-full md:w-[225px] h-[60px] md:h-[75px] rounded-[8px] hover:bg-[#7a5a2e] hover:scale-105 hover:shadow-lg transition-all duration-200 text-sm md:text-base lg:text-[20px] font-bold font-inter flex items-center justify-center text-center"
+            >Lokasi</a
+          >
+        </div>
+      </div>
+      <div>
+        <img
+          src="assets/icon/Asset 5.png"
+          alt="Phone Icon"
+          class="w-[120px] h-[120px] md:w-[200px] md:h-[200px] lg:w-[400px] lg:h-[400px] mx-auto mt-8 md:mt-80 md:mr-32"
+        />
+      </div>
+    </section>
+
+    <!-- Bottom Navigation -->
+    <footer class="mt-auto">
+      <div
+        class="bg-[#d49417] flex flex-col md:flex-row justify-between items-center py-4 h-auto md:h-[189px] px-4 md:px-48 gap-4 md:gap-0"
+        data-aos="fade-up"
+      >
+        <a
+          href="lokasi.html"
+          class="flex flex-col items-center group hover:scale-105 hover:shadow-lg transition-all duration-200"
+        >
+          <img
+            src="assets/icon/(2).png"
+            alt="Lokasi"
+            class="w-[48px] md:w-[75px] h-[48px] md:h-[75px] mb-1 group-hover:opacity-80 transition"
+          />
+          <span
+            class="text-sm md:text-[20px] font-medium font-inter group-hover:text-[#4e2e0e] transition"
+            >Lokasi</span
+          >
+        </a>
+        <a
+          href="produk.html"
+          class="flex flex-col items-center group hover:scale-105 hover:shadow-lg transition-all duration-200"
+        >
+          <img
+            src="assets/icon/(1).png"
+            alt="Produk"
+            class="w-[48px] md:w-[75px] h-[48px] md:h-[75px] mb-1 group-hover:opacity-80 transition"
+          />
+          <span
+            class="text-sm md:text-[20px] font-medium font-inter group-hover:text-[#4e2e0e] transition"
+            >Produk</span
+          >
+        </a>
+        <a
+          href="profil.html"
+          class="flex flex-col items-center group hover:scale-105 hover:shadow-lg transition-all duration-200"
+        >
+          <img
+            src="assets/icon/(7).png"
+            alt="Profil"
+            class="w-[48px] md:w-[75px] h-[48px] md:h-[75px] mb-1 group-hover:opacity-80 transition"
+          />
+          <span
+            class="text-sm md:text-[20px] font-medium font-inter group-hover:text-[#4e2e0e] transition"
+            >Profil</span
+          >
+        </a>
+        <a
+          href="#kontak"
+          class="flex flex-col items-center group hover:scale-105 hover:shadow-lg transition-all duration-200"
+        >
+          <img
+            src="assets/icon/(3).png"
+            alt="Kontak"
+            class="w-[48px] md:w-[75px] h-[48px] md:h-[75px] mb-1 group-hover:opacity-80 transition"
+          />
+          <span
+            class="text-sm md:text-[20px] font-medium font-inter group-hover:text-[#4e2e0e] transition"
+            >Kontak</span
+          >
+        </a>
+      </div>
+      <div
+        class="bg-[#694123] text-center text-base md:text-[20px] font-medium font-inter text-[#f8f3e9] h-[56px] md:h-[76px] flex items-center justify-center"
+      >
+        copyright Ant bakery
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 900,
+        easing: "ease-in-out",
+        once: true,
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll('a[href="#kontak"]').forEach(function (link) {
+          link.addEventListener("click", function (e) {
+            const kontak = document.getElementById("kontak");
+            if (kontak) {
+              e.preventDefault();
+              kontak.scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        });
+      });
+      // Hamburger menu toggle
+      const navToggle = document.getElementById("nav-toggle");
+      const mainNav = document.getElementById("main-nav");
+      navToggle.addEventListener("click", function () {
+        if (mainNav.classList.contains("-translate-y-full")) {
+          mainNav.classList.remove(
+            "-translate-y-full",
+            "opacity-0",
+            "pointer-events-none"
+          );
+          mainNav.classList.add(
+            "translate-y-0",
+            "opacity-100",
+            "pointer-events-auto"
+          );
+        } else {
+          mainNav.classList.add(
+            "-translate-y-full",
+            "opacity-0",
+            "pointer-events-none"
+          );
+          mainNav.classList.remove(
+            "translate-y-0",
+            "opacity-100",
+            "pointer-events-auto"
+          );
+        }
+      });
+      // Close nav on link click (mobile)
+      mainNav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          if (window.innerWidth < 768) {
+            mainNav.classList.add(
+              "-translate-y-full",
+              "opacity-0",
+              "pointer-events-none"
+            );
+            mainNav.classList.remove(
+              "translate-y-0",
+              "opacity-100",
+              "pointer-events-auto"
+            );
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
